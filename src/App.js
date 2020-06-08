@@ -8,6 +8,7 @@ import { Grid } from 'semantic-ui-react';
 
 
 
+
 class App extends React.Component {
 
   constructor() {
@@ -44,12 +45,12 @@ class App extends React.Component {
     return(
       <div className="App">
          <Grid celled>
-           <Grid.Row verticalAlign='top'>
+           <Grid.Row>
              <Grid.Column textAlign='center' width={4}>
                 <h2>User</h2>
                 <Githubcard userData={this.state.userData}/>
              </Grid.Column>
-             <Grid.Column textAlign='center' width={12}>
+             <Grid.Column textAlign='center' width={7}>
                 <h2>Friends</h2>
                 <Followers followers={this.state.userFollowers} />
              </Grid.Column>
